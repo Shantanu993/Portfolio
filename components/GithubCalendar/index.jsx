@@ -6,10 +6,13 @@ import { Row } from "react-bootstrap";
 
 function Github() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
+    <div className="flex flex-col justify-center pb-3 w-{100vw} gap-14">
+      <div>
+      <h1 className="pb-5">
         Days I <strong className="green">Code</strong>
       </h1>
+      </div>
+      <div className="w-{100vw}">
       <GitHubCalendar
         username="Shantanu993"
         blockSize={15}
@@ -17,7 +20,8 @@ function Github() {
         color="#88f584"
         fontSize={16}
       />
-    </Row>
+      </div>    
+    </div>
   );
 }
 
